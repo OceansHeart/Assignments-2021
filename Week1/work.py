@@ -10,9 +10,13 @@ def demo(x):
     returns:
         x*x (int)
     '''
+        if(type(x)==int):
+        return x*x
+    else:
+        return "plz enter integer"
 
     ## Code Here
-    return None
+   
 
 def is_palindrome(string):
     '''
@@ -23,9 +27,12 @@ def is_palindrome(string):
     returns:
         flag (bool)
     '''
-
+   rev=''.join(reversed(string))
+   if (string==rev):
+    return True
+    return False
     ## Code Here
-    return None
+ 
 
 def sqrt_of_numbers(num):
     '''
@@ -35,13 +42,15 @@ def sqrt_of_numbers(num):
     returns:
         sqroot (float)
     '''
-
+    num=abs(num)
+    x=math.sqrt(num)
+    return float(x)
     ## Code Here
-    return None
+    
 
 def Maximum(arr):
     '''
-    This function returns first maximum and the second minimum
+    This function returns first maximum and the second maximum
     number in the array
     args:
         arr (list)
